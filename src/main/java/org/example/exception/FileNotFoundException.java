@@ -1,4 +1,8 @@
 package org.example.exception;
 
-public class FileNotFoundException {
+public class FileNotFoundException extends RuntimeException {
+    public FileNotFoundException(String message) {
+        super(message);
+    }
 }
+
